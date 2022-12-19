@@ -14,7 +14,7 @@ import edu.umb.cs681.distance.Distance;
 public class ParallelDataProcessing {
 
     public static void main(String[] args) throws IOException {
-        String file_name = "/Users/harshavardhan/IdeaProjects/CS681/HW20/data_files/nasa_power_";
+        String file_name = "data_files/nasa_power_";
 
         // Used for storing all different latitude and longitude locations
         List<List<Double>> lat_long_data = new ArrayList<>();
