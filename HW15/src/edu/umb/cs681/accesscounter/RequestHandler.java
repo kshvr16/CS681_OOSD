@@ -2,6 +2,7 @@ package edu.umb.cs681.accesscounter;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -21,7 +22,7 @@ public class RequestHandler implements Runnable{
     @Override
     public void run() {
         AccessCounter accessCounter = AccessCounter.getInstance();
-        Random random = new Random();
+        Random random = new SecureRandom();
         while(true) {
             this.lock.lock();
             try {
